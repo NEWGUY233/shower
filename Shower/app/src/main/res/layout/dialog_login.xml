@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1000dp"
+    android:background="@drawable/dialog_login"
+    android:orientation="horizontal"
+    android:paddingBottom="30dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:layout_height="200dp">
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:inputType="none"
+        android:gravity="center_vertical"
+        android:background="#0fff"
+        android:maxLines="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="#22B8DD"
+        android:textColor="#22B8DD"
+        android:textSize="35dp"
+        android:hint="请输入用户名"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_login_name" />
+    <ImageView
+        android:id="@+id/dialog_login_check"
+        android:layout_width="wrap_content"
+        android:src="@drawable/dialog_login_check"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

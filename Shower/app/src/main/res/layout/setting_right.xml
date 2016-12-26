@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:paddingRight="30dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/setting_right_first"
+        android:layout_width="670dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/setting_first_base"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/setting_first_text"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="200dp"
+            android:textSize="30dp"
+            android:textColor="#991E90FF"
+            android:text="梦幻雨林"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/setting_right_second"
+        android:layout_width="670dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        android:background="@drawable/setting_second_base"
+        android:layout_height="100dp"
+        android:layout_below="@+id/setting_right_first"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/setting_second_text"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="200dp"
+            android:textSize="30dp"
+            android:textColor="#991E90FF"
+            android:text="激情瀑布"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@id/setting_right_second"
+        android:id="@+id/setting_right_third"
+        android:layout_width="670dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/setting_third_base"
+        android:layout_height="100dp" >
+        <TextView
+            android:id="@+id/setting_third_text"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_marginRight="200dp"
+            android:textSize="30dp"
+            android:textColor="#991E90FF"
+            android:text="舒缓溪流"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

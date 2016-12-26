@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:id="@+id/main_img"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/main_main"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="250dp"
+        android:paddingRight="250dp"
+        android:paddingTop="70dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择所需的淋浴模式"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/main_underline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_below="@id/underline"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/main_used_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/main_choose1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_used_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:paddingTop="30dp"
+                    android:src="@drawable/main_person_n" />
+
+                <TextView
+                    android:id="@+id/main_used_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="习惯淋浴模式"
+                    android:textColor="#fff"
+                    android:textSize="27dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_auto_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_choose1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_auto_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:paddingTop="24dp"
+                    android:src="@drawable/main_computer_n" />
+
+                <TextView
+                    android:id="@+id/main_auto_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="自动调节模式"
+                    android:textColor="#fff"
+                    android:textSize="27dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_guest_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/main_choose1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/main_guest_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:paddingTop="15dp"
+                    android:src="@drawable/main_teacup_n" />
+
+                <TextView
+                    android:id="@+id/main_guest_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="客人自定模式"
+                    android:textColor="#fff"
+                    android:textSize="27dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否自动为您调节到最佳温度:"
+            android:textColor="#cfff"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/main_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="38"
+            android:textColor="#22B8DD"
+            android:textSize="36dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textColor="#22B8DD"
+            android:textSize="36dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_text_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_temp_l"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="推荐水温"
+            android:textColor="#cfff"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/main_temp_r"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="习惯水温"
+            android:textColor="#cfff"
+            android:textSize="26dp" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

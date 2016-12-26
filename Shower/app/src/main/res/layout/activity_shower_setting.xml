@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--<include-->
+        <!--layout="@layout/activity_login"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/setting_main"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_bg"
+        android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        />
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/setting_fragment_bg"
+                />
+            <FrameLayout
+                android:background="@drawable/setting_fragment_line"
+                android:id="@+id/setting_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="30dp"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/setting_player"
+                android:background="@drawable/setting_fragment_line"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/setting_player"
+                android:text="欢迎使用福瑞智能淋浴系统"
+                android:textSize="35dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:textColor="#afff"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2fff"
+                android:layout_below="@id/text"
+                android:id="@+id/underline"/>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="目前水温"
+                android:textColor="#8fff"
+                android:textSize="36dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/setting_temp"
+                android:layout_width="wrap_content"
+                android:textSize="45dp"
+                android:text="35"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/text2"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="36dp"
+                android:text="°C"
+                android:textColor="#fff"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/setting_temp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <!--<RatingBar-->
+                <!--android:id="@+id/setting_temp_rating"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_height="30dp" />-->
+            <TextView
+                android:id="@+id/setting_temp_rating"
+                android:layout_width="140dp"
+                android:background="@drawable/setting_temp_rating"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="60dp" />
+            <TextView
+                android:text="水流量"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/setting_temp_rating"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="#8fff"
+                android:textSize="35dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent">
+            <include
+                layout="@layout/setting_right"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#8fff"
+        android:layout_marginBottom="-6dp"
+        android:layout_height="3dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/setting_btn"
+        android:layout_height="150dp">
+        <LinearLayout
+            android:id="@+id/setting_light_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/setting_light_img"
+            android:layout_width="100dp"
+            android:src="@drawable/setting_light_off"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setting_water_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/setting_water_img"
+                android:layout_marginTop="2dp"
+                android:layout_width="90dp"
+                android:src="@drawable/setting_water_off"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setting_stop_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/setting_stop_img"
+                android:layout_width="80dp"
+                android:src="@drawable/setting_stop_off"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setting_end_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/setting_end_img"
+                android:layout_width="86dp"
+                android:src="@drawable/setting_end_off"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setting_user_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/setting_user_img"
+                android:layout_width="80dp"
+                android:src="@drawable/setting_user"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setting_android_lin"
+            android:layout_width="180dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/setting_android_img"
+                android:layout_width="86dp"
+                android:src="@drawable/setting_android"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

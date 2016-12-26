@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/getout_00101"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00102"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00103"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00104"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00105"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00106"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00107"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00108"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00109"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00110"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00111"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00112"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00113"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00114"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00115"
+        android:duration="32" />
+
+    <item
+        android:drawable="@drawable/getout_00115"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00117"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00118"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00119"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00120"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00121"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00122"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00123"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00124"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00125"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00126"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00127"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00128"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00129"
+        android:duration="32" />
+
+    <item
+        android:drawable="@drawable/getout_00130"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00131"
+        android:duration="32" />
+    <item
+        android:drawable="@drawable/getout_00132"
+        android:duration="32" />
+
+</animation-list>

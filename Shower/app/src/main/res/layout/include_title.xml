@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/main_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2011/11/11 15:34"
+            android:textColor="#fff"
+            android:textSize="27dp" />
+
+        <ImageView
+            android:id="@+id/main_wifi"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/main_wifi" />
+
+        <ImageView
+            android:id="@+id/main_sound"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/main_sound" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingLeft="40dp"
+            android:text="室内温度："
+            android:textColor="#fff"
+            android:textSize="27dp" />
+
+        <TextView
+            android:id="@+id/main_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:text="20"
+            android:textColor="#EEC211"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:text="°c"
+            android:textColor="#EEC211"
+            android:textSize="21dp" />
+
+    </LinearLayout>
+</LinearLayout>

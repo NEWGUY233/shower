@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:background="@drawable/start_bg"
+    android:layout_height="match_parent">
+    <com.dou361.ijkplayer.widget.IjkVideoView
+        android:id="@+id/welcome_start"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        ></com.dou361.ijkplayer.widget.IjkVideoView>
+
+    <ImageView
+        android:id="@+id/welcome_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/start_bg" />
+
+</RelativeLayout>
